@@ -69,7 +69,7 @@ const data = {
       countInStock: 12,
       brand: "HADAYA",
       rating: 4.5,
-      numReview: 15,
+      numReviews: 15,
       description: "high quality product",
     },
     {
@@ -81,7 +81,7 @@ const data = {
       countInStock: 5,
       brand: "HADAYA",
       rating: 4.5,
-      numReview: 22,
+      numReviews: 22,
       description: "high quality product",
     },
     {
@@ -93,7 +93,7 @@ const data = {
       countInStock: 6,
       brand: "HADAYA",
       rating: 4.7,
-      numReview: 28,
+      numReviews: 28,
       description: "high quality product",
     },
     {
@@ -105,7 +105,7 @@ const data = {
       countInStock: 7,
       brand: "HADAYA",
       rating: 4.6,
-      numReview: 23,
+      numReviews: 23,
       description: "high quality product",
     },
     {
@@ -117,7 +117,7 @@ const data = {
       countInStock: 22,
       brand: "HADAYA",
       rating: 4.2,
-      numReview: 28,
+      numReviews: 28,
       description: "high quality product",
     },
     {
@@ -129,7 +129,7 @@ const data = {
       countInStock: 25,
       brand: "HADAYA",
       rating: 4.3,
-      numReview: 32,
+      numReviews: 32,
       description: "high quality product",
     },
     {
@@ -141,7 +141,7 @@ const data = {
       countInStock: 14,
       brand: "HADAYA",
       rating: 4.5,
-      numReview: 27,
+      numReviews: 27,
       description: "high quality product",
     },
     {
@@ -153,7 +153,7 @@ const data = {
       countInStock: 2,
       brand: "HADAYA",
       rating: 4.7,
-      numReview: 50,
+      numReviews: 50,
       description: "high quality product",
     },
     {
@@ -165,7 +165,7 @@ const data = {
       countInStock: 17,
       brand: "HADAYA",
       rating: 4.0,
-      numReview: 19,
+      numReviews: 19,
       description: "high quality product",
     },
     {
@@ -177,7 +177,7 @@ const data = {
       countInStock: 3,
       brand: "HADAYA",
       rating: 4.6,
-      numReview: 26,
+      numReviews: 26,
       description: "high quality product",
     },
     {
@@ -189,7 +189,7 @@ const data = {
       countInStock: 4,
       brand: "HADAYA",
       rating: 4.8,
-      numReview: 45,
+      numReviews: 45,
       description: "high quality product",
     },
     {
@@ -201,7 +201,7 @@ const data = {
       countInStock: 30,
       brand: "HADAYA",
       rating: 4.2,
-      numReview: 19,
+      numReviews: 19,
       description: "high quality product",
     },
     {
@@ -213,7 +213,7 @@ const data = {
       countInStock: 27,
       brand: "HADAYA",
       rating: 4.9,
-      numReview: 35,
+      numReviews: 35,
       description: "high quality product",
     },
     {
@@ -225,7 +225,7 @@ const data = {
       countInStock: 16,
       brand: "HADAYA",
       rating: 4.2,
-      numReview: 20,
+      numReviews: 20,
       description: "high quality product",
     },
     {
@@ -237,7 +237,7 @@ const data = {
       countInStock: 0,
       brand: "HADAYA",
       rating: 4.7,
-      numReview: 19,
+      numReviews: 19,
       description: "high quality product",
     },
     {
@@ -249,7 +249,7 @@ const data = {
       countInStock: 0,
       brand: "HADAYA",
       rating: 4.7,
-      numReview: 19,
+      numReviews: 19,
       description: "high quality product",
     },
   ],
