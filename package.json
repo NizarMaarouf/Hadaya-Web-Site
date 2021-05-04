@@ -1,10 +1,11 @@
 {
   "name": "hadaya_web_site",
+  "type": "module",
   "version": "1.0.0",
   "description": "A site for selling products printed on demand",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/NizarMaarouf/Hadaya-Web-Site/issues"
   },
-  "homepage": "https://github.com/NizarMaarouf/Hadaya-Web-Site#readme"
+  "homepage": "https://github.com/NizarMaarouf/Hadaya-Web-Site#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react-responsive-carousel": "^3.2.18"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-plugin-react": "^7.23.2",
+    "nodemon": "^2.0.7"
+  }
 }
