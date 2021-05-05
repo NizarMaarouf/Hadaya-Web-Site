@@ -44,7 +44,7 @@ export default function ProductScreen(props) {
                 <li>
                   <h1>{product.name}</h1>
                 </li>
-                <li>
+                <li className="cart_rating">
                   <Rating
                     rating={product.rating}
                     numReviews={product.numReviews}
@@ -58,7 +58,7 @@ export default function ProductScreen(props) {
               </ul>
             </div>
             <div className="col-1">
-              <div className="card card-body">
+              <div className="card_product card-body">
                 <ul>
                   <li>
                     <div className="row">
@@ -86,10 +86,9 @@ export default function ProductScreen(props) {
                       <div>Qty</div>
                       <div>
                        <select value={qty} onChange={e => setQty(e.target.value)}>
-                        {
-                         [...Array(product.countInStock).keys()].map(x => (
+                       {[...Array(product.countInStock).keys()].map((x) => (
                            <option key={x+1} value={x+1}>{x+1}</option>
-                         )
+                       )
                          )}
                        </select>
                       </div>
