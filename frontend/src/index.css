@@ -4,7 +4,7 @@ html {
    margin: 3rem 0;
 }
 body {
-  background-color: #533710;
+  background-color: #a0937d;
   padding: 0;
   margin: 0;
   height: 90vh;
@@ -31,7 +31,7 @@ body {
 header {
   grid-area: header;
   overflow: hidden;
-  background-color: #4e89ae;
+  background-color: #2f2519;
   position: fixed;
   top: 0;
   width: 100%;
@@ -44,7 +44,7 @@ main {
 footer {
   grid-area: footer;
   overflow: hidden;
-  background-color: #203040;
+  background-color: #2f2519;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -188,7 +188,7 @@ img.large {
 /* Card */
 .card {
   border: 0.1rem #c0c0c0 solid;
-  background-color: #98651e;
+  background-color: #493323;
   border-radius: 0.5rem;
   margin: 0.1rem 1rem;
   width: 22rem;

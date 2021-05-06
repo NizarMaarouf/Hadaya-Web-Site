@@ -1,7 +1,21 @@
+import bcrypt from "bcrypt";
 const data = {
+  users: [
+    {
+      name: "Nizar Maarouf",
+      email: "nizar_maarouf@gmail.com",
+      password: bcrypt.hashSync('1974', 8),
+      isAdmin: true,
+    },
+    {
+      name: "Adan",
+      email: "Adan@gmail.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: false,
+    }
+  ],
   products: [
     {
-      _id: "1",
       name: "بازل",
       category: " Games",
       image: "/images/product-1.jpg",
@@ -13,7 +27,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "2",
       name: "تيرموس نيروستا",
       category: "Bottles",
       image: "/images/product-2.jpg",
@@ -25,7 +38,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "3",
       name: "حامل مفاتيح",
       category: "Wood products",
       image: "/images/product-3.jpg",
@@ -37,7 +49,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "4",
       name: "حقيبه للرحل والفعليات",
       category: "Bags",
       image: "/images/product-4.jpg",
@@ -49,7 +60,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "5",
       name: "علبة الوان",
       category: "Colors Box",
       image: "/images/product-5.jpg",
@@ -61,7 +71,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "6",
       name: "كيس متعدد الاستعمالات",
       category: "Bags",
       image: "/images/product-6.jpg",
@@ -73,7 +82,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "7",
       name: "قاعدة تلفون من خشب",
       category: "Wood products",
       image: "/images/product-7.jpg",
@@ -85,7 +93,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "8",
       name: "قاعده للاشياء السخنه",
       category: "Wood products",
       image: "/images/product-8.jpg",
@@ -97,7 +104,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "9",
       name: "قنينه للمياه البارده",
       category: "Bottle",
       image: "/images/product-9.jpg",
@@ -109,7 +115,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "10",
       name: "كمامه للكبار",
       category: "Adult Masks",
       image: "/images/product-10.jpg",
@@ -121,7 +126,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "11",
       name: "كمامه للاولاد",
       category: "Children Masks",
       image: "/images/product-11.jpg",
@@ -133,7 +137,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "12",
       name: "كباي من معدن للاطفال",
       category: "Metal Cups",
       image: "/images/product-12.jpg",
@@ -145,7 +148,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "13",
       name: "علبة طعام",
       category: "Food box",
       image: "/images/product-13.jpg",
@@ -157,7 +159,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "14",
       name: "مراي مع صوره",
       category: "MirrorS",
       image: "/images/product-14.jpg",
@@ -169,7 +170,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "15",
       name: "كبايات",
       category: "Cups",
       image: "/images/product-15.jpg",
@@ -181,7 +181,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "16",
       name: "وساده",
       category: "Pillow",
       image: "/images/product-16.jpg",
@@ -193,7 +192,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "17",
       name: "مقلمه",
       category: "Pencil case",
       image: "/images/product-17.jpg",
@@ -205,7 +203,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "18",
       name: "مريول",
       category: "Apron",
       image: "/images/product-18.jpg",
@@ -217,7 +214,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "19",
       name: "طقم طبخ",
       category: "Sets",
       image: "/images/product-19.jpg",
@@ -229,7 +225,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "20",
       name: "طقم هديه مولود جديد",
       category: "Sets",
       image: "/images/product-20.jpg",
@@ -241,7 +236,6 @@ const data = {
       description: "high quality product",
     },
     {
-      _id: "21",
       name: "طقم هديه مولود جديد",
       category: "Sets",
       image: "/images/product-21.jpg",
