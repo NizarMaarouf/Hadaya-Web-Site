@@ -6,7 +6,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import { listProducts } from '../action/productActions';
 
 export default function HomeScreen() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   // const [products, setProducts] = useState([]);
   // const [loading, setLoading] = useState(false);
   // const [error, setError] = useState(false);

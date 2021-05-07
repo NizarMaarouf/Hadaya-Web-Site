@@ -6,11 +6,13 @@ import { BrowserRouter as Router , Route , Link} from "react-router-dom";
 import CartScreen from './screen/CartScreen';
 import HomeScreen from './screen/HomeScreen';
 import ProductScreen from './screen/ProductScreen';
+import SigninScreen from './screen/SigninScreen';
 
 
 function App() {
   const cart = useSelector(state => state.cart);
   const {cartItems} = cart;
+  
   return (
     <Router>
       <div className="container">
@@ -34,6 +36,7 @@ function App() {
         <main>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen}></Route>
+          <Route path="/signin" component={SigninScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
 
@@ -57,7 +60,7 @@ function App() {
           >
             Github <i className="fab fa-github"></i>
           </a>
-          <h2 className="right" >All right reserve HADAYA 2021</h2>
+          <h2 className="right">All right reserve HADAYA 2021</h2>
         </footer>
       </div>
     </Router>
