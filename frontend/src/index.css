@@ -4,7 +4,7 @@ html {
    margin: 3rem 0;
 }
 body {
-  background-color: #a0937d;
+  background-color: #faf3f3;
   padding: 0;
   margin:  0;
   height: 90vh;
@@ -19,23 +19,28 @@ body {
 
 /* Layout */
 .container {
+  position: relative;
+  top: -1rem;
+  border:#faf3f3 1px solid;
+  height: 118vh;
+  width: 99vw;
   display: grid;
   grid-template-areas:
     'header'
     'main'
     'footer';
   grid-template-columns: 1fr;
-  grid-template-rows: 1rem 1fr 1rem;
-  height: 100vh;
+  max-width: 1rem 0;
+  padding: 2rem 0;
 }
 header {
   grid-area: header;
   overflow: hidden;
-  background-color: #2f2519;
+  background-color: #a7bbc7;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 4%;
+  height: 5vh;
 }
 main {
   grid-area: main;
@@ -43,14 +48,11 @@ main {
 }
 footer {
   grid-area: footer;
-  /* overflow: hidden; */
-  background-color: #2f2519;
-  /* position: fixed; */
-  /* bottom: 0; */
+  background-color: #a7bbc7;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 5vh;
-  color: #ffffff;
-  /* margin-top: 5rem;; */
+  height: 2.5vh;
 }
 /* Common */
 h1 {
@@ -74,7 +76,7 @@ a {
   border-radius:0.5rem;
   margin:-8rem 0;
   letter-spacing: 0.2rem;
-  color:#fff;
+  color:#393e46;
 }
 
 a:hover {
@@ -189,11 +191,11 @@ img.large {
 /* Card */
 .card {
   border: 0.1rem #c0c0c0 solid;
-  background-color: #493323;
+  background-color: #e1e5ea;
   border-radius: 0.5rem;
-  margin: 0.5rem 0.5rem;
+  margin: 0.3rem 0.3rem;
   width: 16vw;
-  height: 30vh;
+  height: 28vh;
 }
 
 .card_product{
@@ -201,8 +203,8 @@ img.large {
   background-color: #98651e;
   border-radius: 0.5rem;
   margin: 2rem  1rem;
-  width: 29rem;
-   height: 16rem;
+  width: 30rem;
+  height: 20rem;
 }
 
 .card_cart{
@@ -229,19 +231,19 @@ img.large {
 /* Rating */
 .rating{
   margin: -1rem 0;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 .rating span {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: #f0c040;
-  margin: -2rem 0.5rem;
+  margin: -2rem 0.1rem;
 }
 .rating span:last-child {
   background-color:#f0d394;
   border: #ff8000 1px solid;
   border-radius: 0.5rem;
-  padding:  0 0.5rem;
-   margin: -2rem 0.3rem;
+  padding:  0 0.1rem;
+   margin: -2rem 0.1rem;
   color: #222831;
 }
 /* Alert */
@@ -274,7 +276,7 @@ img.large {
 
 .fas{
   position: relative;
-  top:30rem;
+  top:10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,7 +286,7 @@ img.large {
 
 h3{
   position: relative;
-  top:30rem;
+  top:10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,8 +299,8 @@ h3{
 .cred_footer{
  position: relative;
  margin: 0 3rem;
- padding: 0 -2rem;
- left:-43rem;
+ padding: -2rem -2rem;
+ left:-6.5vw;
  font-size: 1.5rem;
  letter-spacing: 0.2rem;
  color: #98651e;
@@ -309,10 +311,10 @@ h3{
   border:#98651e 1px solid;
   border-radius: 0.5rem;
   padding: 0.2rem 0.5rem;
-  font-size:1.8rem;
+  font-size:1.5rem;
   position: relative;
-  left: -45rem;
-  margin: 0 3rem;
+  left: -8vw;
+  margin: 0 1rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -320,10 +322,195 @@ h3{
 
 .right{
   position: relative;
-  left: -25rem;
-  margin: 0 3rem;
+  left: -8vw;
+  margin: -2rem 3rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  color: #02475e;
+}
+
+
+/*------ dynamic------ */
+
+@media screen and (max-width: 736px) {
+
+  /*--------container-------*/
+  .container {
+  position: relative;
+  top: -1rem;
+  /* border:#faf3f3 3px solid; */
+  /* height: 295vh; */
+  /* width: 95vw; */
+  grid-template-columns: 1fr;
+  max-width: 1rem 0;
+  padding: 0.1rem 0;
+  margin: 0 0.7rem;
+}
+
+  /*-------- footer -------*/
+  footer {
+  /* grid-area: footer; */
+  background-color: #a7bbc7;
+  /* position: fixed; */
+  /* bottom: 0; */
+  width: 100%;
+  height: 2.2vh;
+left: -0.5rem;
+}
+
+.cred_footer{
+ position: relative;
+ margin: 0 0.6rem;
+ padding: -2rem -2rem;
+ left:-2vw;
+ color: #98651e;
+ text-decoration: none;
+ font-size:0.8rem;
+}
+
+.cred-link{
+  border:#98651e 1px solid;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  font-size:0.8rem;
+  font-weight:700;
+  position: relative;
+  left: -2vw;
+  margin: 0 0.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.right{
+  margin: -2rem 3rem;
+
+  text-decoration: none;
+  color: #02475e;
+  font-size:0.6rem;
+    font-weight:800;
+
+}
+
+/*-----row + cul-------*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0 1rem;
+  border:#e1e5ea 1px solid;
+  width: 95%;
+}
+.row.center {
+  font-size:1rem;
+  padding:0.5rem 0.5rem;
+  justify-content: center;
+}
+
+.col-1 {
+  flex: 1 1 5rem;
+}
+.col-2 {
+  flex: 2 1 10rem;
+}
+  /*-----header ------*/
+  header{
+    height:2rem;
+    left:-0.5rem;
+  }
+  a.brand {
+  font-size:1.5rem;
+}
+a {
+  font-size:1em;
+}
+/*-------card + image + rating -------*/
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  height:270vh;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+img.small {
+  max-width: 5rem;
+  width: 100%;
+  margin-right: 0.2rem;
+}
+img.medium {
+  max-width: 20rem;
+  width: 100%;
+  height:15vh;
+}
+img.large {
+
+  margin-top: 1rem;
+  height: 80vh;
+  width: 90%;
+}
+
+/* Card */
+.card {
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #e1e5ea;
+  border-radius: 0.5rem;
+  margin: 0.2rem 0.2rem;
+  width: 42vw;
+  height: 28vh;
+}
+
+.card_product{
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #98651e;
+  border-radius: 0.5rem;
+  margin: -180rem  1rem;
+  width: 30rem;
+  height: 20rem;
+}
+
+.card_cart{
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #98651e;
+  border-radius: 0.5rem;
+  margin: -50rem 5rem ;
+  width: 28rem;
+  height: 11rem;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-body > * {
+  margin-bottom: rem 0;
+}
+.price {
+  background-color:#f0d394;
+  border-radius: 0.5rem;
+  padding: 0 0.6rem;
+  font-size: 1.8rem;
+  margin:1rem 0;
+}
+/* Rating */
+.rating{
+  margin: -1rem 0;
+  padding: 0.5rem 0;
+}
+.rating span {
+  font-size: 1rem;
+  color: #f0c040;
+  margin: -2rem 0.1rem;
+}
+.rating span:last-child {
+  background-color:#f0d394;
+  border: #ff8000 1px solid;
+  border-radius: 0.5rem;
+  padding:  0 0.1rem;
+   margin: -2rem 0.1rem;
+  color: #222831;
+}
 }

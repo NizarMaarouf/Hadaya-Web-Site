@@ -57,7 +57,7 @@ function App() {
           >
             Github <i className="fab fa-github"></i>
           </a>
-          <h1 className="right" >All right reserve HADAYA 2021</h1>
+          <h2 className="right" >All right reserve HADAYA 2021</h2>
         </footer>
       </div>
     </Router>
