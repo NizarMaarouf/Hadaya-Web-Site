@@ -1,24 +1,27 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable react/jsx-no-undef */
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { BrowserRouter, Link, Route } from 'react-router-dom';
-import CartScreen from './screens/CartScreen';
-import HomeScreen from './screens/HomeScreen';
-import ProductScreen from './screens/ProductScreen';
+import { BrowserRouter as Router , Route , Link} from "react-router-dom";
+import CartScreen from './screen/CartScreen';
+import HomeScreen from './screen/HomeScreen';
+import ProductScreen from './screen/ProductScreen';
+
 
 function App() {
-  const cart = useSelector((state) => state.cart);
-  const { cartItems } = cart;
-
+  const cart = useSelector(state => state.cart);
+  const {cartItems} = cart;
   return (
-    <BrowserRouter>
-      <div className="grid-container">
+    <Router>
+      <div className="container">
         <header className="row">
           <div>
             <Link className="brand" to="/">
-              HADAYA
+              HADAYA هدايا
             </Link>
           </div>
           <div>
+            {/* To show the popup number of choice carts */}
             <Link to="/cart">
               Cart
               {cartItems.length > 0 && (
@@ -33,10 +36,31 @@ function App() {
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-        <footer className="row center">All right reserved</footer>
+
+        <footer className="row center">
+          <h5 className="cred_footer">
+            made By : <span> Nizar Maarouf</span>
+          </h5>
+          <a
+            className="cred-link"
+            href="https://www.linkedin.com/in/nizar-maarouf/ "
+            alt="linkedin"
+            target="_blank"
+          >
+            LinkedIn <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            className="cred-link"
+            href="https://github.com/NizarMaarouf "
+            alt="github"
+            target="_blank"
+          >
+            Github <i className="fab fa-github"></i>
+          </a>
+          <h1 className="right" >All right reserve HADAYA 2021</h1>
+        </footer>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
-
 export default App;

@@ -4,7 +4,7 @@ import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
 
 const app = express();
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/amazona', {
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/HADAYA', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,

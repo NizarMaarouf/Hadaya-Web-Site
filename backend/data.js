@@ -1,10 +1,10 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 const data = {
   users: [
     {
       name: "Nizar Maarouf",
       email: "nizar_maarouf@gmail.com",
-      password: bcrypt.hashSync('1974', 8),
+      password: bcrypt.hashSync("1974", 8),
       isAdmin: true,
     },
     {
@@ -228,25 +228,24 @@ const data = {
       name: "طقم هديه مولود جديد",
       category: "Sets",
       image: "/images/product-20.jpg",
-      price: 20,
-      countInStock: 0,
+      price: 40,
+      countInStock: 1,
       brand: "HADAYA",
       rating: 4.7,
       numReviews: 19,
       description: "high quality product",
     },
     {
-      name: "طقم هديه مولود جديد",
+      name: "طقم-مع-منشفة",
       category: "Sets",
       image: "/images/product-21.jpg",
-      price: 40,
+      price: 30.5,
       countInStock: 0,
       brand: "HADAYA",
-      rating: 4.7,
-      numReviews: 19,
+      rating: 4.4,
+      numReviews: 10,
       description: "high quality product",
     },
   ],
 };
-
 export default data;
