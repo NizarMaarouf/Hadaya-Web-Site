@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { detailsProduct } from '../actions/productActions';
-import LoadingBox from '../components/LoadingBox';
-import MessageBox from '../components/MessageBox';
-import Rating from '../components/Rating';
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { detailsProduct } from "../actions/productActions";
+import LoadingBox from "../components/LoadingBox";
+import MessageBox from "../components/MessageBox";
+import Rating from "../components/Rating";
 
 export default function ProductScreen(props) {
   const dispatch = useDispatch();
@@ -41,7 +41,7 @@ export default function ProductScreen(props) {
                 <li>
                   <h1>{product.name}</h1>
                 </li>
-                <li>
+                <li className="cart_rating">
                   <Rating
                     rating={product.rating}
                     numReviews={product.numReviews}
@@ -55,7 +55,7 @@ export default function ProductScreen(props) {
               </ul>
             </div>
             <div className="col-1">
-              <div className="card card-body">
+              <div className="card_product card-body">
                 <ul>
                   <li>
                     <div className="row">
@@ -90,7 +90,7 @@ export default function ProductScreen(props) {
                                   <option key={x + 1} value={x + 1}>
                                     {x + 1}
                                   </option>
-                                )
+                                ),
                               )}
                             </select>
                           </div>

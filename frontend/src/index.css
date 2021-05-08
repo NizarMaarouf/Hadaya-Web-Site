@@ -4,7 +4,7 @@ html {
    margin: 3.5rem 0;
 }
 body {
-  background-color: #faf3f3;
+  background-color: #7e7474;
   padding: 0;
   margin:  1rem 0;
   height: 90vh;
@@ -37,7 +37,7 @@ body {
 header {
   grid-area: header;
   /* overflow: hidden; */
-  background-color: #a7bbc7;
+  background-color: #424642bb;
   position: fixed;
   top: 0;
   width: 100%;
@@ -51,7 +51,7 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: #a7bbc7;
+  background-color: #424642b6;
   bottom: 0rem;
   width: 100%;
   height: 5vh;
@@ -138,7 +138,7 @@ header a {
   padding: 1rem;
 }
 a.brand {
-  color: #150e56;
+  color: #f25287;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -151,6 +151,7 @@ a.brand {
   margin-left: 0.2rem;
 }
 .row {
+  color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -183,7 +184,8 @@ img.small {
 img.medium {
   max-width: 35rem;
   width: 100%;
-  /* height:15vh; */
+   border-top-left-radius: 13rem;
+  border-bottom-left-radius: 13rem;
 }
 img.large {
   margin-top: 0rem;
@@ -193,30 +195,34 @@ img.large {
 
 /* Card */
 .card {
-  /* border: 0.1rem #693c72 solid; */
-  background-color: #e1e5ea;
-  border-radius: 0.5rem;
+  background-color: #dae1e7;
+  border-top-left-radius: 13rem;
+  border-bottom-right-radius: 13rem;
   margin: 0.5rem 0.5rem;
-  /* width: 16vw;
-  height: 28vh; */
 }
 
 .card_product{
-  /* border: 0.1rem #c0c0c0 solid; */
-  background-color: #98651e;
+  background-color:#41444b;
   border-radius: 0.5rem;
   margin: 2rem  1rem;
-  /* width: 30rem;
-  height: 20rem; */
 }
 
 .card_cart{
-  /* border: 0.1rem #c0c0c0 solid; */
-  background-color: #98651e;
+  background-color:#41444b;
   border-radius: 0.5rem;
-  margin: 8rem 5rem ;
-  /* width: 28rem;
-  height: 11rem; */
+  margin: 2rem 5rem ;
+}
+
+.card_order{
+  background-color:#41444b;
+  border-radius: 0.5rem;
+  margin: 2rem 5rem ;
+}
+
+.card_payment{
+   background-color:#41444b;
+  border-radius: 0.5rem;
+  margin: 2rem 5rem ;
 }
 .card-body {
   padding: 1rem;
@@ -225,28 +231,31 @@ img.large {
   margin-bottom: -20rem 0;
 }
 .price {
-  background-color:#f0d394;
+  background-color:#f25287;
+  width: 50%;
   border-radius: 0.5rem;
   padding: 0 0.6rem;
   font-size: 1.8rem;
   margin:2rem 0;
+  color: #222831;
 }
 /* Rating */
 .rating{
-  margin: -1rem 0;
+  margin: -2rem 0;
   padding: 0.5rem 0;
+  font-size: 5rem;
 }
 .rating span {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #f0c040;
   margin: -2rem 0.1rem;
 }
 .rating span:last-child {
-  background-color:#f0d394;
-  border: #ff8000 2px solid;
+  background-color:#f25287;
+  border: #ff8000 1px solid;
   border-radius: 0.5rem;
   padding:  0 0.1rem;
-  margin: -2rem 0.1rem;
+  margin: 0rem 3.7rem;
   color: #222831;
 }
 /* Alert */
@@ -309,7 +318,7 @@ h3{
  left:-6.5vw;
  font-size: 1.5rem;
  letter-spacing: 0.2rem;
- color: #98651e;
+ color: #393e46;
  text-decoration: none;
 }
 
@@ -333,7 +342,7 @@ h3{
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #02475e;
+  color: #393e46;
 }
 
 /* Form */
@@ -364,7 +373,7 @@ h3{
   padding: 0.5rem 0;
   z-index: 1;
   background-color: #03506f;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   border-radius: 0.5rem;
 }
 .dropdown:hover .dropdown-content {
