@@ -249,6 +249,9 @@ img.large {
   color: #222831;
 }
 /* Alert */
+.loading {
+  display: block !important;
+}
 .success {
   border: 1px solid #f0c040;
   border-radius: 0.5rem;
@@ -356,7 +359,7 @@ h3{
   position: absolute;
   display: none;
   right: 1rem;
-  min-width: 11rem;
+  min-width: 12rem;
   padding: 0.5rem 0;
   z-index: 1;
   background-color: #03506f;

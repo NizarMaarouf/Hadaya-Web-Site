@@ -1,12 +1,12 @@
-/* eslint-disable react/jsx-no-target-blank */
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter, Link, Route } from 'react-router-dom';
-import { signout } from './actions/userActions';
-import CartScreen from './screens/CartScreen';
-import HomeScreen from './screens/HomeScreen';
-import ProductScreen from './screens/ProductScreen';
-import SigninScreen from './screens/SigninScreen';
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { signout } from "./actions/userActions";
+import CartScreen from "./screens/CartScreen";
+import HomeScreen from "./screens/HomeScreen";
+import ProductScreen from "./screens/ProductScreen";
+import RegisterScreen from "./screens/RegisterScreen";
+import SigninScreen from "./screens/SigninScreen";
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -18,8 +18,8 @@ function App() {
     dispatch(signout());
   };
   return (
-    <BrowserRouter>
-      <div className="grid-container">
+    <Router>
+      <div className="container">
         <header className="row">
           <div>
             <Link className="brand" to="/">
@@ -27,7 +27,6 @@ function App() {
             </Link>
           </div>
           <div>
-            {/* To show the popup number of choice carts */}
             <Link to="/cart">
               Cart
               {cartItems.length > 0 && (
@@ -56,8 +55,10 @@ function App() {
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/signin" component={SigninScreen}></Route>
+          <Route path="/register" component={RegisterScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
+
         <footer className="row center">
           <h5 className="cred_footer">
             made By : <span> Nizar Maarouf</span>
@@ -82,8 +83,7 @@ function App() {
           <h2 className="right">All right reserve HADAYA 2021</h2>
         </footer>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
-
 export default App;
