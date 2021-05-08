@@ -1,9 +1,12 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { BrowserRouter, Link, Route } from "react-router-dom";
 import { signout } from "./actions/userActions";
 import CartScreen from "./screens/CartScreen";
 import HomeScreen from "./screens/HomeScreen";
+import PaymentMethodScreen from "./screens/PaymentMethodScreen";
+import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import ProductScreen from "./screens/ProductScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import ShippingAddressScreen from "./screens/ShippingAddressScreen";
@@ -19,8 +22,8 @@ function App() {
     dispatch(signout());
   };
   return (
-    <Router>
-      <div className="container">
+    <BrowserRouter>
+      <div className="grid-container">
         <header className="row">
           <div>
             <Link className="brand" to="/">
@@ -58,9 +61,10 @@ function App() {
           <Route path="/signin" component={SigninScreen}></Route>
           <Route path="/register" component={RegisterScreen}></Route>
           <Route path="/shipping" component={ShippingAddressScreen}></Route>
+          <Route path="/payment" component={PaymentMethodScreen}></Route>
+          <Route path="/placeorder" component={PlaceOrderScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-
         <footer className="row center">
           <h5 className="cred_footer">
             made By : <span> Nizar Maarouf</span>
@@ -85,7 +89,8 @@ function App() {
           <h2 className="right">All right reserve HADAYA 2021</h2>
         </footer>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
+
 export default App;

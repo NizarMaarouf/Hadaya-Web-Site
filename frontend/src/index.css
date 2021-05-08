@@ -67,13 +67,14 @@ h1 {
 }
 
 h2 {
+  color: #0a043c;
   margin: -2rem 0;
   font-size: 1.7rem;
   padding: 2rem 0;
 }
 
 a {
-  color:#150e56;
+  color:#fff;
   font-size:2rem;
   text-decoration: none;
   border-radius:0.5rem;
@@ -347,7 +348,7 @@ h3{
 }
 .form label {
   margin: 1rem 0;
-  display: block;
+  /* display: block; */
 }
 
 /* Dropdown */

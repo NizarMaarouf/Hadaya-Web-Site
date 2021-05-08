@@ -37,7 +37,7 @@ userRouter.post(
 );
 
 userRouter.post(
-  "/register",
+  '/register',
   expressAsyncHandler(async (req, res) => {
     const user = new User({
       name: req.body.name,
@@ -52,7 +52,7 @@ userRouter.post(
       isAdmin: createdUser.isAdmin,
       token: generateToken(createdUser),
     });
-  }),
+  })
 );
 
 export default userRouter;
