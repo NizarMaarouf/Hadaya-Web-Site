@@ -1,8 +1,8 @@
 {
-  "name": "amazona",
+  "name": "hadaya_web_site",
   "type": "module",
   "version": "1.0.0",
-  "description": "amazona backend server",
+  "description": "A site for selling products printed on demand",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
@@ -14,16 +14,16 @@
   "author": "Nizar Maarouf",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NizarMaarouf/Hadaya-Web-Siteissues"
+    "url": "https://github.com/NizarMaarouf/Hadaya-Web-Site/issues"
   },
   "homepage": "https://github.com/NizarMaarouf/Hadaya-Web-Site#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
-    "dotenv": "^9.0.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.7"
+    "mongoose": "^5.12.7",
+    "react-responsive-carousel": "^3.2.18"
   },
   "devDependencies": {
     "eslint": "^7.25.0",

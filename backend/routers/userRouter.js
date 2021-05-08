@@ -17,10 +17,9 @@ userRouter.get(
 );
 
 userRouter.post(
-  "/signin",
+  '/signin',
   expressAsyncHandler(async (req, res) => {
     const user = await User.findOne({ email: req.body.email });
-    // check if user already exists or password is correct
     if (user) {
       if (bcrypt.compareSync(req.body.password, user.password)) {
         res.send({
@@ -33,8 +32,8 @@ userRouter.post(
         return;
       }
     }
-    res.status(401).send({ message: "Invalid email or password" });
-  }),
+    res.status(401).send({ message: 'Invalid email or password' });
+  })
 );
 
 export default userRouter;
