@@ -1,8 +1,5 @@
 # Nizar Maarouf Hadaya Web Site
 
-
-![HADAYA](https://github.com/[NizarMaarou]/[Hadaya-Web-Site]/blob/[main]/images/HADAYA.jpg?raw=true)
-
 ## You Will Learn
 
 - HTML5 and CSS3: Semantic Elements, CSS Grid, Flex box
