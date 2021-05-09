@@ -1,6 +1,6 @@
 # Nizar Maarouf Hadaya Web Site
 
-![HADAYA](/images/HADAYA.jpg)
+![HADAYA](./images/HADAYA.jpg)
 
 ## You Will Learn
 
