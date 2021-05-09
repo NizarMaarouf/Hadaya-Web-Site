@@ -8,8 +8,7 @@
 - Node & Express: Web API, Body Parser, File Upload, JWT
 - MongoDB: Mongoose, Aggregation
 - Development: ESLint, Babel, Git, Github,
-- Deployment: Heroku
-
+- Deployment: Heroku,
 
 ## Run Locally
 
@@ -33,13 +32,7 @@ $ npm start
 
 $ cd frontend
 $ npm install
-$ npm start
-### 4. Seed Users and Products
-
-- Run this on chrome: <http://localhost:5000/api/users>
-- It returns admin email and password
-- Run this on chrome: <http://localhost:5000/api/products>
-- It creates 6 sample products
+$ npm start,
 
 1. Introduction to this course
    1. what you will build
