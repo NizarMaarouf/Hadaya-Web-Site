@@ -1,9 +1,6 @@
 # Nizar Maarouf Hadaya Web Site
 
-![Hadaya Web Site](/images/HADAYA.jpg)
-## Demo Website
-
-- 👉 Heroku : [https://newamazona-final.herokuapp.com](https://newamazona-final.herokuapp.com)
+![HADAYA](/images/HADAYA.jpg)
 
 ## You Will Learn
 
@@ -36,13 +33,9 @@ $ npm start
 
 ### 3. Run Frontend
 
-
-# open new terminal
-
 $ cd frontend
 $ npm install
 $ npm start
-
 ### 4. Seed Users and Products
 
 - Run this on chrome: <http://localhost:5000/api/users>
@@ -243,9 +236,9 @@ $ npm start
     2. create payOrder in api.js
     3. create route for /:id/pay in orderRouter.js
     4. re-render after pay order
-32. Create Search Box and Search Screen
+<!-- 32. Create Search Box and Search Screen
     1. create search bar in Header.js
     2. add style
     3. handle submit form
     4. edit parse url to get query string
-    5. update product list api for search by name
+    5. update product list api for search by name -->
