@@ -1,12 +1,12 @@
-import Axios from "axios";
-import { PayPalButton } from "react-paypal-button-v2";
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { detailsOrder, payOrder } from "../actions/orderActions";
-import LoadingBox from "../components/LoadingBox";
-import MessageBox from "../components/MessageBox";
-import { ORDER_PAY_RESET } from "../constants/orderConstants";
+import Axios from 'axios';
+import { PayPalButton } from 'react-paypal-button-v2';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { detailsOrder, payOrder } from '../actions/orderActions';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
+import { ORDER_PAY_RESET } from '../constants/orderConstants';
 
 export default function OrderScreen(props) {
   const orderId = props.match.params.id;
@@ -23,9 +23,9 @@ export default function OrderScreen(props) {
   const dispatch = useDispatch();
   useEffect(() => {
     const addPayPalScript = async () => {
-      const { data } = await Axios.get("/api/config/paypal");
-      const script = document.createElement("script");
-      script.type = "text/javascript";
+      const { data } = await Axios.get('/api/config/paypal');
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
       script.src = `https://www.paypal.com/sdk/js?client-id=${data}`;
       script.async = true;
       script.onload = () => {
@@ -67,7 +67,7 @@ export default function OrderScreen(props) {
                 <p>
                   <strong>Name:</strong> {order.shippingAddress.fullName} <br />
                   <strong>Address: </strong> {order.shippingAddress.address},
-                  {order.shippingAddress.city},{" "}
+                  {order.shippingAddress.city},{' '}
                   {order.shippingAddress.postalCode},
                   {order.shippingAddress.country}
                 </p>

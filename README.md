@@ -1,5 +1,55 @@
 # Nizar Maarouf Hadaya Web Site
 
+![HADAYA](/images/HADAYA.jpg)
+## Demo Website
+
+- 👉 Heroku : [https://newamazona-final.herokuapp.com](https://newamazona-final.herokuapp.com)
+
+## You Will Learn
+
+- HTML5 and CSS3: Semantic Elements, CSS Grid, Flex box
+- React: Components, Props, Events, Hooks, Router, Axios
+- Redux: Store, Reducers, Actions
+- Node & Express: Web API, Body Parser, File Upload, JWT
+- MongoDB: Mongoose, Aggregation
+- Development: ESLint, Babel, Git, Github,
+- Deployment: Heroku
+- Watch React & Node Tutorial
+
+## Run Locally
+
+### 1. Setup MongoDB
+
+- Local MongoDB
+  - Install it from [here](https://www.mongodb.com/try/download/community)
+  - Create .env file in root folder
+  - Set MONGODB_URL=mongodb://localhost/amazona
+- Atlas Cloud MongoDB
+  - Create database at [https://cloud.mongodb.com](https://cloud.mongodb.com)
+  - Create .env file in root folder
+  - Set MONGODB_URL=mongodb+srv://your-db-connection
+
+### 2. Run Backend
+
+$ npm install
+$ npm start
+
+### 3. Run Frontend
+
+
+# open new terminal
+
+$ cd frontend
+$ npm install
+$ npm start
+
+### 4. Seed Users and Products
+
+- Run this on chrome: <http://localhost:5000/api/users>
+- It returns admin email and password
+- Run this on chrome: <http://localhost:5000/api/products>
+- It creates 6 sample products
+
 1. Introduction to this course
    1. what you will build
    2. what you will learn
@@ -193,3 +243,9 @@
     2. create payOrder in api.js
     3. create route for /:id/pay in orderRouter.js
     4. re-render after pay order
+32. Create Search Box and Search Screen
+    1. create search bar in Header.js
+    2. add style
+    3. handle submit form
+    4. edit parse url to get query string
+    5. update product list api for search by name

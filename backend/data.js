@@ -235,17 +235,17 @@ const data = {
       numReviews: 19,
       description: "high quality product",
     },
-    // {
-    //   name: "طقم-مع-منشفة",
-    //   category: "Sets",
-    //   image: "/images/product-21.jpg",
-    //   price: 30.5,
-    //   countInStock: 0,
-    //   brand: "HADAYA",
-    //   rating: 4.4,
-    //   numReviews: 10,
-    //   description: "high quality product",
-    // },
+    {
+      name: "طقم-مع-منشفة",
+      category: "Sets",
+      image: "/images/product-21.jpg",
+      price: 30.5,
+      countInStock: 0,
+      brand: "HADAYA",
+      rating: 4.4,
+      numReviews: 10,
+      description: "high quality product",
+    },
   ],
 };
 export default data;
