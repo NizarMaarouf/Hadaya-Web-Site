@@ -54,7 +54,7 @@ export default function CartScreen(props) {
                       value={item.qty}
                       onChange={(e) =>
                         dispatch(
-                          addToCart(item.product, Number(e.target.value)),
+                          addToCart(item.product, Number(e.target.value))
                         )
                       }
                     >
