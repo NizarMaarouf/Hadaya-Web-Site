@@ -1,6 +1,6 @@
 # Nizar Maarouf Hadaya Web Site
 
-![HADAYA](/images/HADAYA.jpg)
+![Hadaya Web Site](/images/HADAYA.jpg)
 ## Demo Website
 
 - 👉 Heroku : [https://newamazona-final.herokuapp.com](https://newamazona-final.herokuapp.com)
