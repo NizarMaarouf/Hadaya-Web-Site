@@ -1,7 +1,6 @@
 # Nizar Maarouf Hadaya Web Site
 
 ![HADAYA](./images/HADAYA.jpg)
-![HADAYA](https://github.com/[Nizar_Maarouf]/[HADAYA]/blob/[main]/images/HADAYA.jpg?raw=true)
 
 ## You Will Learn
 
