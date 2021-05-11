@@ -1,12 +1,6 @@
 # Nizar Maarouf Hadaya Web Site
 
-<<<<<<< HEAD
 ## Iam use all this Techniques and libraries and packages
-=======
-![HADAYA](./images/HADAYA.jpg)
-
-## You Will Learn
->>>>>>> fb62a59d02358a72a6db52c878dd2ebc069c0a5f
 
 - HTML5 and CSS3: Semantic Elements, CSS Grid, Flex box
 - React: Components, Props, Events, Hooks, Router, Axios
