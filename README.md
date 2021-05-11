@@ -281,7 +281,7 @@ $ npm start,
     10. Commit and push
 
 
-    
+
 <!-- 42. Create Search Box and Search Screen
     1. create search bar in Header.js
     2. add style
