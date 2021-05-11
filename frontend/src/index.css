@@ -311,22 +311,25 @@ img.large {
 
 .fas{
   position: relative;
-  top:5vh;
+  top:1vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size:15rem;
-  color:#a02020
+  font-size:8rem;
+  color:#a02020;
+   margin-top: 3rem;
+
 }
 
 h3{
   position: relative;
-  top:5vh;
+  top:1vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size:5rem;
-  color:#a02020
+  font-size:3rem;
+  color:#a02020;
+  margin-bottom: 2rem;
 }
 
 /* ----footer---- */
@@ -388,12 +391,13 @@ h3{
 .dropdown-content {
   position: absolute;
   display: none;
-  right: 1rem;
+  right: 0;
   min-width: 12rem;
-  padding: 0.5rem 0;
+  padding: 1rem;
   z-index: 1;
-  background-color: #03506f;
-  margin: 1rem 0;
+  background-color: #203040;
+  margin: 0;
+  margin-top: 0.4rem;
   border-radius: 0.5rem;
 }
 .dropdown:hover .dropdown-content {
@@ -410,6 +414,23 @@ h3{
 .checkout-steps > div.active {
   border-top-color: #f08000;
   color: #f08000;
+}
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f4f4f4;
+}
+.table td,
+.table th {
+  text-align: left;
+  border: 0.1rem solid #e4e4e4;
+  padding: 0.5rem;
+}
+.table button {
+  margin: 0 0.2rem;
 }
 
 /* Carousel */
