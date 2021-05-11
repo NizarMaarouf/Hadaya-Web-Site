@@ -279,12 +279,3 @@ $ npm start,
     8. Create mongodb atlas database
     9. Set database connection in heroku env variables
     10. Commit and push
-
-
-
-<!-- 42. Create Search Box and Search Screen
-    1. create search bar in Header.js
-    2. add style
-    3. handle submit form
-    4. edit parse url to get query string
-    5. update product list api for search by name -->
