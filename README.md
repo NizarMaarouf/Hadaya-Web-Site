@@ -232,53 +232,43 @@ $ npm start,
     2. create api for getMyOrders
     3. show orders in profile screen
     4. style orders
-33. Display User Profile
-    1. create user details api
-    2. show user information
-34. Update User Profile
-    1. create user update api
-    2. update user info
-35. Create Admin View
-    1. Create Admin Menu
-    2. Create Admin Middleware in Backend
-    3. Create Admin Route in Frontend
-36. List Products
+33. List Products
     1. Create Product List Screen
     2. Add reducer to store
     3. show products on the screen
-37. Create Product
+34. Create Product
     1. build create product api
     2. build Create Product button
     3. define product create constant, action and reducer
     4. use action in Product List Screen
-38. Build Product Edit Screen
+35. Build Product Edit Screen
     1. create edit screen
     2. define state
     3. create fields
     4. load product details
     5. add to routes
-39. Update Product
+36. Update Product
     1. define update api
     2. define product update constant, action and reducer
     3. use action in Product Edit Screen
-40. Upload Product Image
+37. Upload Product Image
     1. npm install multer
     2. define upload router
     3. create uploads folder
     4. Handle frontend
-41. Delete Product
+38. Delete Product
     1. create delete api in backend
     2. create delete constants, action and reducer
     3. use it in product list screen
-42. List Orders
+39. List Orders
     1. create order list api
     2. create Order List Screen
     3. Add reducer to store
     4. show products on the screen
-43. Delete Order
+40. Delete Order
     2. create delete order action and reducer
     3. add order delete action to order list
-44. Publish To Heroku
+41. Publish To Heroku
     1. Create git repository
     2. Create heroku account
     3. install Heroku CLI
@@ -290,7 +280,9 @@ $ npm start,
     9. Set database connection in heroku env variables
     10. Commit and push
 
-<!-- 33. Create Search Box and Search Screen
+
+    
+<!-- 42. Create Search Box and Search Screen
     1. create search bar in Header.js
     2. add style
     3. handle submit form
