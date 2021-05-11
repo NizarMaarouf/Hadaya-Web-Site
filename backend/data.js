@@ -12,7 +12,7 @@ const data = {
       email: "Adan@gmail.com",
       password: bcrypt.hashSync("1234", 8),
       isAdmin: false,
-    }
+    },
   ],
   products: [
     {
@@ -233,6 +233,17 @@ const data = {
       brand: "HADAYA",
       rating: 4.7,
       numReviews: 19,
+      description: "high quality product",
+    },
+    {
+      name: "طقم-مع-منشفة",
+      category: "Sets",
+      image: "/images/product-21.jpg",
+      price: 30.5,
+      countInStock: 0,
+      brand: "HADAYA",
+      rating: 4.4,
+      numReviews: 10,
       description: "high quality product",
     },
     {
