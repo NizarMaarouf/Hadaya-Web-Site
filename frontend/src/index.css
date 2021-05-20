@@ -1,17 +1,21 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
   box-sizing: border-box;
-   margin: 3.5rem 0;
+  margin: 3.5rem 0;
 }
 body {
-  background-color: #7e7474;
-  padding: 0;
-  margin:  1rem 0;
+background-color : #151515;
+
+
+  margin:  1rem 0rem;
   height: 90vh;
   font-size: 1.6rem;
   font-family: Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 #root {
   /* margin: -1rem 0; */
@@ -23,7 +27,7 @@ body {
 .container {
   position: relative;
   top: -0.2rem;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: grid;
   grid-template-areas:
@@ -31,7 +35,7 @@ body {
     'main'
     'footer';
   grid-template-columns: 1fr;
-  /* max-width: 0.2rem 0; */
+  max-width: 0.2rem 0;
   padding: 0.5rem 0;
 }
 header {
@@ -190,9 +194,7 @@ img.small {
 }
 img.medium {
   max-width: 35rem;
-  width: 100%;
-   /* border-top-left-radius: 12rem;
-  border-bottom-right-radius: 12rem; */
+  width: 100vw;
   border-radius: 1rem;
 }
 img.large {
@@ -203,33 +205,35 @@ img.large {
 
 /* Card */
 .card {
-  background-color: #dae1e7;
-  /* border-top-left-radius: 12rem;
-  border-bottom-right-radius: 12rem; */
+background-color : #810000;
+
   border-radius: 1rem;
   margin: 0.5rem 0.5rem;
 }
 
 .card_product{
-  background-color:#41444b;
+background-color : #1b1717;
+
   border-radius: 0.5rem;
   margin: 2rem  1rem;
 }
 
 .card_cart{
-  background-color:#41444b;
+background-color : #1b1717;
+
   border-radius: 0.5rem;
   margin: 2rem 5rem ;
 }
 
 .card_order{
-  background-color:#41444b;
+background-color : #1b1717;
+
   border-radius: 0.5rem;
   margin: 2rem 5rem ;
 }
 
 .card_payment{
-   background-color:#41444b;
+ background-color : #1b1717;
   border-radius: 0.5rem;
   margin: 2rem 5rem ;
 }
@@ -240,13 +244,14 @@ img.large {
   margin-bottom: -20rem 0;
 }
 .card h2{
-  color: #150485;
+  color: #fff;
 }
 .card h2:hover {
   color: #ff8000;
 }
 .price {
-  background-color:#f25287;
+background-color : #eeebdd;
+
   width: 62%;
   border-radius: 0.5rem;
   padding: 0 0.6rem;
@@ -266,7 +271,8 @@ img.large {
   margin: -2rem 0.1rem;
 }
 .rating span:last-child {
-  background-color:#f25287;
+background-color : #eeebdd;
+
   border: #ff8000 1px solid;
   border-radius: 0.5rem;
   padding:  0 0.1rem;

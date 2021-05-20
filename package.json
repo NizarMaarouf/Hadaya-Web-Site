@@ -5,7 +5,7 @@
   "description": "A site for selling products printed on demand",
   "main": "index.js",
   "scripts": {
-    "build":"cd frontend && npm install && npm run build",
+    "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "repository": {
@@ -35,5 +35,8 @@
     "eslint-plugin-react": "^7.23.2",
     "nodemon": "^2.0.7"
   },
-  "engines": {"node": "12.4.0" , "npm":"6.9.0"}
+  "engines": {
+    "node": "12.4.0",
+    "npm": "6.9.0"
+  }
 }
