@@ -256,7 +256,7 @@ const data = {
       rating: 4.4,
       numReviews: 10,
       description: "high quality product",
-    },
+    }
   ],
 };
 export default data;
