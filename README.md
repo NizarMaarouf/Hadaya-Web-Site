@@ -43,7 +43,7 @@ $ npm start,
    2. Web Browser
    3. VS Code Extension
 3. Website Template
-   1. Create HADAYA folder
+   1. Create Hadaya Web Site folder
    2. create template folder
    3. create index.html
    4. add default HTML code
@@ -273,7 +273,7 @@ $ npm start,
     2. Create heroku account
     3. install Heroku CLI
     4. heroku login
-    5. heroku apps:create(HADAYA) 
+    5. heroku apps:create(HADAYA)
     6. Edit package.json for build script
     7. Create Profile
     8. Create mongodb atlas database
