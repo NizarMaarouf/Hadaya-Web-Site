@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React from 'react'
 
 export default function Rating(props) {
   const { rating, numReviews } = props;
