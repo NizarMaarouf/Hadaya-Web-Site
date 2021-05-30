@@ -125,13 +125,13 @@ function App() {
             href="https://www.linkedin.com/in/nizar-maarouf/ "
             alt="linkedin"
             target="_blank">
-            LinkedIn <i className="fab fa-linkedin"></i>
+             <i className="fab fa-linkedin"></i>
           </a>
           <a className="cred-link"
             href="https://github.com/NizarMaarouf "
             alt="github"
             target="_blank">
-            Github <i className="fab fa-github"></i>
+             <i className="fab fa-github"></i>
           </a>
           <h2 className="right">All right reserve HADAYA 2021</h2>
         </footer>
